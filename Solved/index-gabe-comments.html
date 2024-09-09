@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Summary: This HTML file sets up a basic web page to display a Plotly.js bar chart showing car miles data.
+    It includes references to external Plotly.js and D3.js libraries for data visualization and data handling, respectively. -->
+
+    <!-- Specifies the character encoding for the HTML document as UTF-8. This ensures proper rendering of text. -->
+    <meta charset="UTF-8">
+
+    <!-- Ensures the webpage is responsive by setting the viewport width to the device width and initial zoom level to 1.0 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Makes sure that the website displays content using the latest rendering engine available in the browser -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- The title of the webpage. It will appear in the browser tab. -->
+    <title>Car Miles</title>
+
+    <!-- Include the latest version of the Plotly.js library for creating the chart -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <!-- Include the latest version of the D3.js library for data handling and manipulation -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Summary: The div element below serves as a container for the Plotly.js chart. The JavaScript code will 
+    reference this div's id ("plot") to insert and display the bar chart on the page. -->
+
+    <!-- A div container where the Plotly chart will be rendered. The id="plot" will be referenced in the JavaScript -->
+    <div id="plot"></div>
+
+    <!-- Summary: The external JavaScript file "plots.js" contains the logic for reading data using D3.js and 
+    creating a bar chart with Plotly.js. -->
+
+    <!-- Link to an external JavaScript file (plots.js) that contains the logic for loading data and rendering the chart -->
+    <script src="plots.js"></script>
+
+</body>
+
+</html>
+
+<!-- Detailed Breakdown:
+
+1. `<!DOCTYPE html>`:
+   - Declares the document type as HTML5, ensuring the browser parses the document in standards-compliant mode.
+
+2. `<meta charset="UTF-8">`:
+   - Defines the character encoding for the HTML document as UTF-8, ensuring that it can display a wide variety of characters and symbols.
+
+3. `<meta name="viewport" content="width=device-width, initial-scale=1.0">`:
+   - Configures the viewport to make the page responsive by adjusting the layout based on the screen size and resolution of the device.
+
+4. `<meta http-equiv="X-UA-Compatible" content="ie=edge">`:
+   - Ensures that the document is displayed in the latest browser rendering mode available.
+
+5. `<title>Car Miles</title>`:
+   - Sets the title of the web page, which will be displayed in the browser's title bar or tab.
+
+6. `<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>`:
+   - Loads the latest version of Plotly.js, a graphing library used to create the bar chart for visualizing the car miles data.
+
+7. `<script src="https://d3js.org/d3.v7.min.js"></script>`:
+   - Loads the latest version of D3.js, which is used to load and process data from external sources (such as a JSON file).
+
+8. `<div id="plot"></div>`:
+   - This div acts as a container for the Plotly.js chart. The id "plot" is used by JavaScript to reference this element and render the bar chart.
+
+9. `<script src="plots.js"></script>`:
+   - Links to an external JavaScript file named `plots.js`, where the main logic for reading the data using D3.js and creating the Plotly.js chart is located.
+-->
